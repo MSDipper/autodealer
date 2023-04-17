@@ -11,16 +11,20 @@ import "./styles/css/style800.css"
 import "./styles/css/style980.css"
 import Home from "./pages/Home";
 import PostList from "./pages/PostList";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/postlist" element={<PostList />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
