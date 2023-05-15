@@ -1,32 +1,25 @@
-.idea
-idea
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+.env
+/.env
+
+# misc
 .DS_Store
 
-*.egg-info/
-.installed.cfg
-*.egg
+.env.development.local
+.env.test.local
+.env.production.local
 
-dist
-db.sqlite3
-
-venv
-
-__pycache__/
-*/__pycache__/
-*.py[cod]
-.pyc
-*.pyc
-
-!*media/.gitkeep
-media/*
-
-log/debug.log
-
-.env
-
-build
-doc
-home.rst
-make.bat
-Makefile
-Footer
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
